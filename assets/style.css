@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    background-color: #FFC470;
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #8B322C;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu--container{
+    min-width: 240px;
+    max-width: 380px;
+}
+.menu--list{
+    display: flex;
+}
+.menu--list li{
+    list-style: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0 15px;
+}
+.menu--list li a{
+    text-decoration: none;
+    color: white;
+}
+.container--logo .logo{
+    width: 30px;
+    height: 30px;
+}
+.main{
+    width: 100%;
+    height: auto;
+}
+.hero{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(120px, 1fr));
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border-top:1px solid hsl(4, 57%, 44%);
+    border-bottom: 1px solid hsl(4, 57%, 44%);
+}
+.hero--info{
+    padding: 0 5px;
+}
+.hero--info h3{
+    margin-bottom: 5px;
+    color: hsl(4, 57%, 44%);
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.hero--info p{
+    font-size: .8rem;
+    padding: 0 2px;
+}
+.image--containerHero{
+    min-width: 150px;
+    max-width: 280px;
+    max-height: 340px;
+    margin: 0 auto;
+}
+.image--containerHero img{
+    width: 100%;
+    height: 100%;
+    max-height: 340px;
+    border-radius: 10px;
+}
+.foodSection--pizza{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.foodSection--pizza h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8B322C;
+    margin-bottom: 10px;
+}
+.pizza--container{
+    display: grid;
+    width: 100%;
+    padding: 0 15px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pizza{
+    border-radius: 15px;
+    border: 1px solid #8B322C ;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.pizza figure{
+    min-width: 138px;
+    max-width: 200px;
+    max-height: 190px;
+    border-bottom: 1px solid #8B322C;
+    border-radius: 15px;
+}
+.pizza--price{
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: .8rem;
+}
+.pizza--container img{
+    width: 100%;
+    height: 100%;
+    max-height: 190px;
+    border-radius: 15px;
+}
+.foodSection--desserts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.foodSection--desserts h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8B322C;
+    margin-bottom: 10px;
+}
+.desserts-container{
+    display: grid;
+    width: 100%;
+    padding: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.desserts{
+    border-radius: 15px;
+    border: 1px solid #8B322C ;
+}
+.desserts figure{
+    min-width: 138px;
+    max-width: 200px;
+    max-height: 190px;
+    border-bottom: 1px solid #8B322C;
+    border-radius: 15px;
+}
+.desserts--price{
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: .8rem;
+}
+.desserts img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8B322C;
+    padding: 10px 0;
+}
+footer h3{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+footer img{
+    width: 20px;
+    height: 20px;
+}
+footer p{
+    font-size: .8;
+    color: white;
+}
+@media(min-width: 400px) {
+    .menu--list li{
+        font-size: 1.2rem;
+    }
+    .container--logo .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .hero--info h3{
+        font-size: 1.5rem;
+    }
+    .hero--info p{
+        font-size: 1.1rem;
+    }
+    .foodSection--pizza h2{
+        font-size: 1.8rem;
+    }
+    .pizza--container{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .pizza--price{
+        margin: 8px 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .foodSection--desserts h2{
+        font-size: 1.8rem;
+    }
+    .desserts-container{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 180px));
+        gap: 15px;
+    }
+    .desserts--price{
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+    footer{
+        padding: 20px 0;
+    }
+    footer h3{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    footer ul{
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    footer img{
+        width: 25px;
+        height: 25px;
+    }
+    footer p{
+        font-size: 1rem;    
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 680px) {
+    .menu--list li{
+        font-size: 1.6rem;
+    }
+    .container--logo .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .hero{
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .hero--info h3{
+        font-size: 1.8rem;
+    }
+    .hero--info p{
+        font-size: 1.4rem;
+    }
+    footer h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    footer ul{
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    footer img{
+        width: 35px;
+        height: 35px;
+    }
+    footer p{
+        font-size: 1.2rem;    
+        margin-bottom: 18px;
+    }
+}
